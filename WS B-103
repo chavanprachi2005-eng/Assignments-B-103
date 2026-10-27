@@ -1,0 +1,77 @@
+
+# ----------------------------------------------------
+# 1. Arithmetic Operators
+# ----------------------------------------------------
+x = 15
+y = 4
+
+print("--- Arithmetic Operators ---")
+print(f"Addition (x + y):        {x + y}")       # 19
+print(f"Subtraction (x - y):     {x - y}")       # 11
+print(f"Multiplication (x * y):  {x * y}")       # 60
+print(f"Division (x / y):        {x / y}")       # 3.75 (Returns a float)
+print(f"Floor Division (x // y): {x // y}")      # 3 (Rounds down to nearest integer)
+print(f"Modulus/Remainder (x % y):{x % y}")      # 3 (Remainder of 15 / 4)
+print(f"Exponentiation (x ** y): {x ** y}")      # 50625 (15 to the power of 4)
+
+# ----------------------------------------------------
+# 2. Assignment Operators
+# ----------------------------------------------------
+print("\n--- Assignment Operators ---")
+num = 10
+print(f"Initial assignment (=):  {num}")
+num += 5                                         # Equivalent to num = num + 5
+print(f"Add & Assign (num += 5): {num}")
+num *= 2                                         # Equivalent to num = num * 2
+print(f"Mult & Assign (num *= 2):{num}")
+
+# ----------------------------------------------------
+# 3. Comparison Operators (Returns True or False)
+# ----------------------------------------------------
+print("\n--- Comparison Operators ---")
+a = 10
+b = 20
+print(f"Is equal to (a == b):      {a == b}")    # False
+print(f"Is not equal to (a != b):  {a != b}")    # True
+print(f"Is greater than (a > b):   {a > b}")     # False
+print(f"Is less than or eq (a <= b):{a <= b}")   # True
+
+# ----------------------------------------------------
+# 4. Logical Operators
+# ----------------------------------------------------
+print("\n--- Logical Operators ---")
+is_sunny = True
+is_warm = False
+print(f"AND logic (is_sunny and is_warm): {is_sunny and is_warm}") # False (both must be True)
+print(f"OR logic (is_sunny or is_warm):   {is_sunny or is_warm}")  # True (at least one is True)
+print(f"NOT logic (not is_sunny):         {not is_sunny}")         # False (inverts True to False)
+
+# ----------------------------------------------------
+# 5. Bitwise Operators (Works on raw binary numbers)
+# ----------------------------------------------------
+print("\n--- Bitwise Operators ---")
+m = 6    # Binary: 0110
+n = 3    # Binary: 0011
+print(f"Bitwise AND (m & n): {m & n}")           # 2  (Binary: 0010)
+print(f"Bitwise OR (m | n):  {m | n}")           # 7  (Binary: 0111)
+
+# ----------------------------------------------------
+# 6. Membership Operators
+# ----------------------------------------------------
+print("\n--- Membership Operators ---")
+fruits = ["apple", "banana", "cherry"]
+print(f"Is 'banana' in list?   {'banana' in fruits}")     # True
+print(f"Is 'orange' not in list? {'orange' not in fruits}") # True
+
+# ----------------------------------------------------
+# 7. Identity Operators
+# ----------------------------------------------------
+print("\n--- Identity Operators ---")
+list1 = [1, 2, 3]
+list2 = [1, 2, 3]
+list3 = list1
+
+# list1 and list2 have identical contents, but point to different places in memory
+print(f"list1 is list2: {list1 is list2}")       # False
+# list1 and list3 point to the exact same reference
+print(f"list1 is list3: {list1 is list3}")       # True

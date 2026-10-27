@@ -1,0 +1,32 @@
+
+age = 20
+
+if age >= 18:
+    print("You can vote!")  # Runs because 20 >= 18 is True
+
+score = 45
+
+if score >= 50:
+    print("Passed")
+else:
+    print("Failed")  # Runs because score is less than 50
+
+
+traffic_light = "yellow"
+
+if traffic_light == "red":
+    print("Stop")
+elif traffic_light == "yellow":
+    print("Slow down")  # Runs because condition matches
+else:
+    print("Go")
+
+
+age = 15
+
+# Syntax: value_if_true if condition else value_if_false
+status = "Adult" if age >= 18 else "Minor"
+
+print(status)  # Prints: Minor
+
+

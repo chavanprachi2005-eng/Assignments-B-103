@@ -1,0 +1,25 @@
+fruits = ["apple", "banana", "cherry"]
+for fruit in fruits:
+    print(fruit)
+
+
+# Prints numbers from 0 to 4
+for i in range(5):
+    print(i)
+
+
+count = 0
+while count < 3:
+    print(count)
+    count += 1  # Crucial: increments count so the loop doesn't run forever
+
+
+for i in range(3):
+    print(i)
+else:
+    print("Loop finished successfully!")
+
+
+for x in [1, 2]:
+    for y in ["A", "B"]:
+        print(x, y)

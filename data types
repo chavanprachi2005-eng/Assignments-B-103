@@ -1,0 +1,6 @@
+age = 25                  # int
+grade = 'A'               # string (Python treats characters as strings)
+pi = 3.14                 # float
+message = "Hello!"        # string
+shopping_list = [1, 2, 3] # list
+is_active = True          # boolean (Must be capitalized in Python)

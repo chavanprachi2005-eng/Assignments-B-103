@@ -1,0 +1,20 @@
+
+
+# --- LIST ---
+# Constant time O(1) for appends, but O(N) for inserting in the middle
+fruits = ["apple", "banana"]
+fruits.append("cherry")  # ["apple", "banana", "cherry"]
+
+# --- TUPLE ---
+# Fixed sizes; memory efficient compared to lists
+coordinates = (40.7128, -74.0060)
+
+# --- DICTIONARY ---
+# Average O(1) time complexity for lookup, insertion, and deletion
+user = {"id": 101, "role": "admin"}
+print(user["role"])  # Output: admin
+
+# --- SET ---
+# Average O(1) time complexity for membership testing ('in' checks)
+unique_ids = {1, 2, 3, 3}  # Evaluates to {1, 2, 3}
+print(2 in unique_ids)    # Output: True
