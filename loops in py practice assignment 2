@@ -1,0 +1,113 @@
+#Print numbers from 1 to 50
+for i in range(1, 51):
+    print(i)
+
+#Print numbers from 50 to 1
+for i in range(50, 0, -1):
+    print(i)
+
+#Print all even numbers from 1 to 100
+for i in range(2, 101, 2):
+    print(i)
+
+#Print all odd numbers from 1 to 100 
+for i in range(1, 101, 2):
+    print(i)
+
+ #Print all numbers that are divisible by 5 from 1 to 100
+for i in range(1, 101):
+    if i % 5 == 0:
+        print(i)
+
+ #Print the sum of numbers from 1 to 50       
+total_sum = 0
+for i in range(1, 51):
+    total_sum += i
+
+    print("sum:", total_sum)
+
+#Print the sum of all even numbers from 1 to 20   
+even_sum = 0
+for i in range(2, 21, 2):
+   even_sum += i
+
+print("sum of even numbers:",even_sum)
+
+#Print the sum of all odd numbers from 1 to 20
+odd_sum = 0
+for i in range(1, 21, 2):
+    odd_sum += i
+print("sum of odd numbers:", odd_sum)
+
+#Print the first 20 natural numbers
+for i in range(1, 21):
+    print(i)
+
+#Print the multiplication table of a number entered by the user
+num = int(input("Enter a number: "))
+
+for i in range(1, 11):
+    print(f"{num} * {i} = {num * i}")
+
+#Count how many numbers are there from 1 to N
+n = int(input("Enter N: "))
+count = 0
+
+for i in range(1, n+1):
+    count += 1
+print("Total count:", count)
+
+#Print the square of numbers from 1 to 10
+for i in range(1, 11):
+     print(f"Square of {i} is {i**2}")
+
+#Print the cube of numbers from 1 to 10
+for i in range(1, 11):
+    print(f"cube of {i} is {i**3}")
+
+#Print numbers from 100 to 1, decreasing by 5 each time
+for i in range(100, 0, -5):
+    print(i)
+
+#Print all numbers between 1 and 100 that are divisible by 3 and 4
+for i in range(1, 101):
+    if i % 3 == 0 and i % 4 == 0:
+        print(i)  
+
+#Print the first 10 multiples of a given number
+num = int(input("Enter a number: "))
+
+for i in range(1, 11):
+    print(num * 1)
+
+#Print all numbers between 1 and N that are divisible by 2
+n = int(input("Enter N:"))
+for i in range(1, n + 1 ):
+    if i % 2 == 0:
+        print(i)
+
+#Print numbers from 1 to N, skipping numbers divisible by 3
+n = int(input("Enter N: "))
+
+for i in range(1, n + 1):
+    if i % 3 == 0:
+        continue
+    print(i)
+
+#Print numbers from 1 to N and stop when the number reaches 20
+n = int(input("Enter N: "))
+
+for i in range(1, n + 1):
+    if i > 20:
+        break
+    print(i)
+
+#Print the following pattern
+1
+22
+333
+4444
+55555
+
+for i in range(1, 6):
+    print(str(i) * i)
